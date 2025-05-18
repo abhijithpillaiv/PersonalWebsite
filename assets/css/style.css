@@ -669,7 +669,7 @@ section.section-show {
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
+  background: #b63b19;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -753,7 +753,9 @@ section.section-show {
 .contact .php-email-form button[type=submit]:hover {
   background: #15bb62;
 }
-
+.status {
+  margin-bottom: 20px;
+}
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);

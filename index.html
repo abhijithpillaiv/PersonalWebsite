@@ -341,19 +341,24 @@
     </div>
 
     <!-- Right: Contact Form -->
-    <div class="col-lg-6">
-      <form action="" method="POST" class="php-email-form">
-        <div class="form-group mb-4">
-          <input type="text" name="name" class="form-control" placeholder="Your Name">
-        </div>
-        <div class="form-group mb-4">
-          <input type="email" name="email" class="form-control" placeholder="Your Email *" required>
-        </div>
-        <div class="form-group mb-4">
-          <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
-        </div>
-        <div class="text-end">
-          <button type="submit" class="btn btn-primary">Send Message</button>
+    <div class="contact col-lg-6">
+      <form action="sendmail.php" method="POST" class="php-email-form">
+        <div class="loading status">Loading...</div>
+        <div class="error-message status">Error...</div>
+        <div class="sent-message status">sent...</div>
+        <div class="message-group">
+          <div class="form-group mb-4">
+            <input type="text" name="name" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group mb-4">
+            <input type="email" name="email" class="form-control" placeholder="Your Email *" required>
+          </div>
+          <div class="form-group mb-4">
+            <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
         </div>
       </form>
     </div>
