@@ -662,6 +662,8 @@ section.section-show {
 }
 
 .contact .php-email-form {
+  flex: 1;
+  align-content: center;
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
 }
@@ -670,7 +672,7 @@ section.section-show {
   display: none;
   background: rgba(255, 255, 255, 0.08);
   background: #b63b19;
-  text-align: left;
+  text-align: center;
   padding: 15px;
   font-weight: 600;
 }
@@ -756,6 +758,9 @@ section.section-show {
 .status {
   margin-bottom: 20px;
 }
+.contact-form {
+  display: flex;
+}
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -764,6 +769,12 @@ section.section-show {
   100% {
     transform: rotate(360deg);
   }
+}
+.loading,
+.error-message,
+.sent-message {
+  display: none;
+  margin-top: 10px;
 }
 
 /*--------------------------------------------------------------
